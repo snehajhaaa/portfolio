@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
 body {
   font-family: "Manrope", sans-serif;
-  color: #444444;
+  color: #444;
   scroll-behavior: smooth;
-  background: linear-gradient(to right, #F2F2F2, #E6E6E6);
-
-
+  background: linear-gradient(to right, #f2f2f2, #e6e6e6);
 }
 
 a {
@@ -14,21 +13,12 @@ a {
 
 a:hover {
   color: #5afff7;
-  text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -51,7 +41,7 @@ h6 {
 
 .back-to-top:hover {
   background: #5c50ff;
-  color: #000000;
+  color: #000;
 }
 
 .back-to-top.active {
@@ -75,14 +65,6 @@ h6 {
   background: rgba(25, 28, 31, 0.8);
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
-/* Original styles */
-
 .navbar {
   padding: 0;
 }
@@ -97,7 +79,7 @@ h6 {
 
 .navbar li {
   position: relative;
-  margin-right: 20px; /* Add spacing between items for better readability */
+  margin-right: 20px;
 }
 
 .navbar a,
@@ -126,84 +108,24 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #27d4ff;
 }
 
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 400;
-  color: #3b434a;
-  letter-spacing: 1px;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
-  color: #ffb727;
-}
-
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
 @media only screen and (max-width: 768px) {
-  /* Responsive styles */
-
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .navbar li {
-    margin-right: 0; /* Remove margin on smaller screens */
-    margin-bottom: 10px; /* Add spacing between items for better readability */
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 
   .navbar a,
   .navbar a:focus {
-    padding: 10px 15px; /* Adjust padding for better touch interactions */
+    padding: 10px 15px;
   }
 
   .navbar .dropdown ul {
@@ -212,15 +134,12 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/eom.jpg") top right;
+  background: url("../img/eom.webp") top right;
   background-size: cover;
-  position: relative;
+  position: relative
 }
 
 #hero:before {
@@ -230,7 +149,7 @@ h6 {
   bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0
 }
 
 #hero .hero-container {
@@ -243,14 +162,18 @@ h6 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0 15px
 }
-
+@media only screen and (max-width: 575px) {
+  #hero .hero-container {
+    padding: 130px 30px; /* Adjust padding for smaller screens */
+  }
+}
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Satisfy", serif;
-  color: #f1f1f1;
+  color: #f1f1f1
 }
 
 #hero h2 {
@@ -260,64 +183,62 @@ h6 {
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
-#hero .btn-scroll {
+.btn-scroll {
   transition: 0.4s;
   color: rgba(255, 255, 255, 0.6);
-  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both
 }
 
-#hero .btn-scroll i {
-  font-size: 48px;
+.btn-scroll i {
+  font-size: 48px
 }
 
-#hero .btn-scroll:hover {
-  color: #2744ff;
+.btn-scroll:hover {
+  color: #2744ff
 }
 
-@media (min-width: 1024px) {
+@media (min-width:1024px) {
   #hero {
-    background-attachment: fixed;
+    background-attachment: fixed
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width:575px) {
   #hero h1 {
-    font-size: 40px;
+    font-size: 40px
   }
 
   #hero h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 30px
   }
 }
 
 @keyframes up-down {
   0% {
-    transform: translateY(5px);
+    transform: translateY(5px)
   }
 
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-5px)
   }
 }
-/*
-# Sections General
----*/
+
 section {
-  padding: 60px 0;
+  padding: 60px 0
 }
 
 .section-bg {
-  background-color: white;
+  background-color: white
 }
 
 .section-title {
   text-align: center;
   padding: 30px 0;
-  position: relative;
+  position: relative
 }
 
 .section-title h2 {
@@ -328,7 +249,7 @@ section {
   padding-bottom: 0;
   color: #3b434a;
   position: relative;
-  z-index: 2;
+  z-index: 2
 }
 
 .section-title span {
@@ -341,62 +262,60 @@ section {
   font-weight: 600;
   font-size: 52px;
   text-transform: uppercase;
-  line-height: 0;
+  line-height: 0
 }
 
 .section-title p {
   margin-bottom: 0;
   position: relative;
-  z-index: 2;
+  z-index: 2
 }
 
-@media (max-width: 575px) {
+@media (max-width:575px) {
   .section-title h2 {
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-bottom: 15px
   }
 
   .section-title span {
-    font-size: 38px;
+    font-size: 38px
   }
 }
 
-/*# About Me
---------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #3b434a;
+  color: #3b434a
 }
 
 .about .content ul {
   list-style: none;
-  padding: 0;
+  padding: 0
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items: center
 }
 
 .about .content ul strong {
-  margin-right: 10px;
+  margin-right: 10px
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: #ffb727;
-  line-height: 0;
+  line-height: 0
 }
 
 .about .content p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .about .content .count-box {
-  width: 100%;
+  width: 100%
 }
 
 .about .content .count-box i {
@@ -404,7 +323,7 @@ section {
   font-size: 36px;
   color: #ffb727;
   float: left;
-  line-height: 0;
+  line-height: 0
 }
 
 .about .content .count-box span {
@@ -413,7 +332,7 @@ section {
   display: block;
   font-weight: 700;
   color: #3b434a;
-  margin-left: 50px;
+  margin-left: 50px
 }
 
 .about .content .count-box p {
@@ -421,7 +340,7 @@ section {
   margin: 0 0 0 50px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #5d6a75;
+  color: #5d6a75
 }
 
 .about .content .count-box a {
@@ -431,30 +350,30 @@ section {
   color: #5d6a75;
   font-size: 15px;
   font-family: "Satisfy", serif;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s
 }
 
 .about .content .count-box a:hover {
-  color: #82909c;
+  color: #82909c
 }
 
 .about .image {
-  background: url("../img/sne.JPG") center center no-repeat;
+  background: url("../img/sne\ \(1\)\ \(1\).jpg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
   border-radius: 8px;
-  padding: 8px;
+  padding: 8px
 }
 
 .about .skills-content {
-  margin-top: 30px;
+  margin-top: 30px
 }
 
 .about .skills-content .progress {
   height: 60px;
   display: block;
   background: none;
-  border-radius: 0;
+  border-radius: 0
 }
 
 .about .skills-content .progress .skill {
@@ -464,39 +383,38 @@ section {
   display: block;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
-  color: #ae1919;
+  color: #ae1919
 }
 
 .about .skills-content .progress .skill .val {
   float: right;
-  font-style: normal;
+  font-style: normal
 }
 
 .about .skills-content .progress-bar-wrap {
-  background: #e6e8eb;
+  background: #e6e8eb
 }
 
 .about .skills-content .progress-bar {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #1db2f8;
+  background-color: #1db2f8
 }
-/*# My Resume
-*/
+
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #3b434a;
+  color: #3b434a
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #8fabc4;
-  position: relative;
+  position: relative
 }
 
 .resume .resume-item h4 {
@@ -505,7 +423,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   color: #ff2b27;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .resume .resume-item h5 {
@@ -514,19 +432,19 @@ section {
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .resume .resume-item ul {
-  padding-left: 20px;
+  padding-left: 20px
 }
 
 .resume .resume-item ul li {
-  padding-bottom: 10px;
+  padding-bottom: 10px
 }
 
 .resume .resume-item:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0
 }
 
 .resume .resume-item::before {
@@ -538,17 +456,14 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #82909c;
+  border: 2px solid #82909c
 }
 
-/*
-# My Services
---------------------------------------------------------------*/
 .services {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 8px ;
+  margin-bottom: 8px
 }
 
 .services .icon-box {
@@ -561,7 +476,7 @@ section {
   text-align: center;
   border-radius: 8px;
   border: 2px solid #fff;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto
 }
 
 .services .icon {
@@ -572,41 +487,40 @@ section {
   border-radius: 50%;
   width: 72px;
   height: 72px;
-  background: #fff4df;
+  background: #fff4df
 }
 
 .services .icon i {
   font-size: 36px;
   line-height: 1;
-  color: #ff2727;
+  color: #ff2727
 }
 
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 18px
 }
 
 .services .title a {
   color: #111;
-  transition: 0.3s;
+  transition: 0.3s
 }
 
 .services .description {
   font-size: 15px;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .services .icon-box:hover {
   border-color: #2797ff;
-  border-radius: 8px;
+  border-radius: 8px
 }
 
 .services .icon-box:hover .title a {
-  color: #ff5627;
+  color: #ff5627
 }
-
 
 .contact .info-box {
   color: #444444;
@@ -617,27 +531,14 @@ section {
   padding: 20px 0 30px 0;
   border-radius: 8px;
   margin: 8px;
-  background-color: white;
+  background-color: white
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:600px) {
   .contact .info-box {
-    width: 100%; /* Adjust the width for smaller screens */
-    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    height: auto
   }
-}
-.contact .info-box:hover {
-  color: #444444;
-  width: 500px;
-  border: 1px solid #2797ff;
-  transition: ease 0.5s;
-  height: 230px;
-  text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 20px 0 30px 0;
-  border-radius: 8px;
-  margin: 8px;
-  background-color: white;
 }
 
 .contact .info-box i.bx {
@@ -645,27 +546,27 @@ section {
   color: #ff2727;
   border-radius: 50%;
   padding: 15px;
-  background: #fff6e4;
+  background: #fff6e4
 }
 
 .contact .info-box h3 {
   font-size: 20px;
   color: #777777;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 10px 0
 }
 
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .contact .social-links {
   margin-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: center
 }
 
 .contact .social-links a {
@@ -677,21 +578,17 @@ section {
   transition: 0.3s;
   padding: 14px;
   border-radius: 50px;
-  border: 1px solid #2797ff; /* Add border color */
+  border: 1px solid #2797ff
 }
 
 .contact .social-links a:hover {
   color: #fff;
   border-color: #ffffff;
-  background: #27b7ff;
+  background: #27b7ff
 }
 
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 #footer {
-  background: url("../img/bg.jpg") top center no-repeat;
+  background: url("../img/bg.webp") top center no-repeat;
   background-size: cover;
   color: #fff;
   font-size: 14px;
@@ -699,7 +596,7 @@ section {
   padding: 70px 0;
   position: relative;
   border-radius: 18px;
-  margin:0;
+  margin: 0
 }
 
 #footer::before {
@@ -710,11 +607,11 @@ section {
   top: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 18px;
+  border-radius: 18px
 }
 
 #footer .container {
-  position: relative;
+  position: relative
 }
 
 #footer h3 {
@@ -724,15 +621,12 @@ section {
   position: relative;
   font-family: "Satisfy", serif;
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px 0
 }
 
 #footer p {
   font-size: 15;
   font-style: bold;
   padding: 0;
-  margin: 0 0 40px 0;
-}
-#footer:hover{
-  border: 1px solid #2797ff;
+  margin: 0 0 40px 0
 }
