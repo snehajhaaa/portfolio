@@ -34,18 +34,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #000000;
   line-height: 0;
 }
 
 .back-to-top:hover {
   background: #5c50ff;
-  color: #000;
+  color: #ffe2e2;
+  transition: 0.5s ease;
 }
 
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+  color: #ffe2e2;
 }
 
 #header {
@@ -202,11 +204,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-scroll i {
-  font-size: 48px
+  font-size: 50px
 }
 
 .btn-scroll:hover {
-  color: #2744ff
+  color: #6a7eff
 }
 
 @media (max-width: 575px) {
@@ -341,7 +343,7 @@ section {
 .about .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 14px;
   color: #5d6a75
 }
