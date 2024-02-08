@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", serif;
+  font-family: "Satisfy", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f1f1f1
 }
 
@@ -399,8 +399,9 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #b6b7b9;
+  background: #98FF98;
   padding: 5px 15px;
+  border-radius: 8px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px
@@ -485,12 +486,12 @@ section {
 }
 
 .services .icon-box:hover {
-  border-color: #2797ff;
-  border-radius: 8px
+  border-color: #ff2727;
+  border-radius: 8px;
 }
 
 .services .icon-box:hover .title a {
-  color: #ff5627
+  color: #ff2727;
 }
 
 .contact .info-box {
@@ -503,6 +504,10 @@ section {
   border-radius: 8px;
   margin: 8px;
   background-color: white
+}
+.contact .info-box:hover {
+  border-radius: 8px;
+  border-color: #ff2727;
 }
 
 @media only screen and (max-width:600px) {
