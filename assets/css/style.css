@@ -5,19 +5,15 @@ body {
   background: linear-gradient(to right, #f2f2f2, #e6e6e6);
   behavior: smooth;
 }
-
 a {
   text-decoration: none;
 }
-
 a:hover {
   color: #551ef9;
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1,h2,h3,h4,h5,h6 {
   font-family: "Manrope", sans-serif;
 }
-
 .back-to-top {
   position: fixed;
   visibility: hidden;
@@ -31,45 +27,37 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: all 0.4s;
 }
-
 .back-to-top i {
   font-size: 28px;
   color: #000000;
   line-height: 0;
 }
-
 .back-to-top:hover {
   background: #5c50ff;
   color: #ffe2e2;
   transition: 0.5s ease;
 }
-
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
   color: #ffe2e2;
 }
-
 #header {
   z-index: 997;
   transition: all 0.5s;
   height: 80px;
   background: rgba(25, 28, 31, 0.8);
 }
-
 #header.header-transparent {
   background: transparent;
 }
-
 #header.header-scrolled {
   height: 60px;
   background: rgba(25, 28, 31, 0.8);
 }
-
 .navbar {
   padding: 0;
 }
-
 .navbar ul {
   margin: 0;
   padding: 0;
@@ -77,14 +65,11 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
   align-items: center;
 }
-
 .navbar li {
   position: relative;
   margin-right: 20px;
 }
-
-.navbar a,
-.navbar a:focus {
+.navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,43 +83,31 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
 }
-
-.navbar a i,
-.navbar a:focus i {
+.navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar a:hover,.navbar .active, .navbar .active:focus,.navbar li:hover>a {
   color: #27d4ff;
 }
-
 @media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .navbar li {
     margin-right: 0;
     margin-bottom: 10px;
   }
-
-  .navbar a,
-  .navbar a:focus {
+  .navbar a, .navbar a:focus {
     padding: 10px 15px;
   }
-
   .navbar .dropdown ul {
     left: 0;
     top: 100%;
   }
 }
-
 #hero {
   width: 100%;
   height: 100vh;
@@ -142,7 +115,6 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative
 }
-
 @media only screen and (max-width: 768px) {
   #hero {
     background-position: center;
@@ -150,7 +122,6 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
   }
 }
-
 #hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.65);
@@ -160,7 +131,6 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0
 }
-
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -173,20 +143,17 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   padding: 0 15px
 }
-
 @media only screen and (max-width: 575px) {
   #hero .hero-container {
-    padding: 130px 30px; /* Adjust padding for smaller screens */
+    padding: 130px 30px;
   }
 }
-
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
   font-family: "Manrope", 'Segoe UI';
   color: #f1f1f1
 }
-
 #hero h2 {
   font-style: bold;
   color: #ffffff;
@@ -196,32 +163,26 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   text-transform: uppercase
 }
-
 .btn-scroll {
   transition: 0.4s;
   color: rgba(255, 255, 255, 0.6);
   animation: up-down 1s ease-in-out infinite alternate-reverse both
 }
-
 .btn-scroll i {
   font-size: 50px
 }
-
 .btn-scroll:hover {
   color: #6a7eff
 }
-
 @media (max-width: 575px) {
   #hero h1 {
     font-size: 40px
   }
-
   #hero h2 {
     text-align: center;
     margin-bottom: 30px
   }
 }
-
 @keyframes up-down {
   0% {
     transform: translateY(5px)
@@ -235,17 +196,14 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0
 }
-
 .section-bg {
   background-color: white
 }
-
 .section-title {
   text-align: center;
   padding: 30px 0;
   position: relative
 }
-
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
@@ -256,7 +214,6 @@ section {
   position: relative;
   z-index: 2
 }
-
 .section-title span {
   position: absolute;
   top: 30px;
@@ -269,45 +226,37 @@ section {
   text-transform: uppercase;
   line-height: 0
 }
-
 .section-title p {
   margin-bottom: 0;
   position: relative;
   z-index: 2
 }
-
 @media (max-width: 575px) {
   .section-title h2 {
     font-size: 28px;
     margin-bottom: 15px
   }
-
   .section-title span {
     font-size: 38px
   }
 }
-
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #3b434a
 }
-
 .about .content ul {
   list-style: none;
   padding: 0
 }
-
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center
 }
-
 .about .content ul strong {
   margin-right: 10px
 }
-
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
@@ -321,7 +270,6 @@ section {
   border-radius: 8px;
   padding: 8px
 }
-
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -329,14 +277,12 @@ section {
   margin-bottom: 20px;
   color: #3b434a
 }
-
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
   border-left: 2px solid #0077df;
   position: relative
 }
-
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 16px;
@@ -345,7 +291,6 @@ section {
   color: #ff2b27;
   margin-bottom: 10px
 }
-
 .resume .resume-item h5 {
   font-size: 16px;
   background: #98FF98;
@@ -355,19 +300,12 @@ section {
   font-weight: 600;
   margin-bottom: 10px
 }
-
 .resume .resume-item ul {
   padding-left: 20px
 }
-
 .resume .resume-item ul li {
   padding-bottom: 10px
 }
-
-.resume .resume-item:last-child {
-  padding-bottom: 0
-}
-
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -379,14 +317,12 @@ section {
   background: #fff;
   border: 2px solid #82909c
 }
-
 .services {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 8px
 }
-
 .services .icon-box {
   padding: 30px;
   position: relative;
@@ -399,7 +335,6 @@ section {
   border: 2px solid #fff;
   margin: 0 auto
 }
-
 .services .icon {
   margin: 0 auto 20px auto;
   padding-top: 17px;
@@ -410,39 +345,32 @@ section {
   height: 72px;
   background: #fff4df
 }
-
 .services .icon i {
   font-size: 36px;
   line-height: 1;
   color: #ff2727
 }
-
 .services .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px
 }
-
 .services .title a {
   color: #111;
   transition: 0.3s
 }
-
 .services .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0
 }
-
 .services .icon-box:hover {
   border-color: #ff2727;
   border-radius: 8px;
 }
-
 .services .icon-box:hover .title a {
   color: #ff2727;
 }
-
 .contact .info-box {
   color: #444444;
   width: 500px;
@@ -454,14 +382,12 @@ section {
   margin: 8px;
   background-color: white
 }
-
 @media only screen and (max-width:600px) {
   .contact .info-box {
     width: 100%;
     height: auto
   }
 }
-
 .contact .info-box i.bx {
   font-size: 24px;
   color: #ff2727;
@@ -469,27 +395,23 @@ section {
   padding: 15px;
   background: #fff6e4
 }
-
 .contact .info-box h3 {
   font-size: 20px;
   color: #3f3b3b;
   font-weight: 700;
   margin: 10px 0
 }
-
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0
 }
-
 .contact .social-links {
   margin-top: 15px;
   display: flex;
   justify-content: center
 }
-
 .contact .social-links a {
   font-size: 18px;
   display: inline-block;
@@ -501,13 +423,11 @@ section {
   border-radius: 50px;
   border: 1px solid #2797ff
 }
-
 .contact .social-links a:hover {
   color: #fff;
   border-color: #ffffff;
   background: #27b7ff
 }
-
 #footer {
   background: url("../img/bg.webp") top center no-repeat;
   background-size: cover;
@@ -518,7 +438,6 @@ section {
   position: relative;
   margin: 0
 }
-
 #footer::before {
   content: "";
   position: absolute;
@@ -528,11 +447,9 @@ section {
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
 }
-
 #footer .container {
   position: relative
 }
-
 #footer h3 {
   font-size: 36px;
   font-weight: 700;
@@ -542,7 +459,6 @@ section {
   padding: 0;
   margin: 0 0 25px 0
 }
-
 #footer p {
   font-size: 15;
   font-style: bold;
@@ -553,5 +469,3 @@ footer {
   text-align: center;
   font-size: 19px;
 }
-
-
