@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 64px;
-  font-family: "Satisfy", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Manrope", 'Segoe UI';
   color: #f1f1f1
 }
 
@@ -311,57 +311,9 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #ffb727;
+  color: #2740ff;
   line-height: 0
 }
-
-.about .content p:last-child {
-  margin-bottom: 0
-}
-
-.about .content .count-box {
-  width: 100%
-}
-
-.about .content .count-box i {
-  display: block;
-  font-size: 36px;
-  color: #ffb727;
-  float: left;
-  line-height: 0
-}
-
-.about .content .count-box span {
-  font-size: 36px;
-  line-height: 30px;
-  display: block;
-  font-weight: 700;
-  color: #3b434a;
-  margin-left: 50px
-}
-
-.about .content .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 50px;
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  color: #5d6a75
-}
-
-.about .content .count-box a {
-  font-weight: 600;
-  display: block;
-  margin-top: 20px;
-  color: #5d6a75;
-  font-size: 15px;
-  font-family: "Satisfy", serif;
-  transition: ease-in-out 0.3s
-}
-
-.about .content .count-box a:hover {
-  color: #82909c
-}
-
 .about .image {
   background: url("../img/sne-_1_-_1_.webp") center center no-repeat;
   background-size: cover;
@@ -370,9 +322,6 @@ section {
   padding: 8px
 }
 
-.about .skills-content {
-  margin-top: 30px
-}
 .resume .resume-title {
   font-size: 26px;
   font-weight: 700;
@@ -505,10 +454,6 @@ section {
   margin: 8px;
   background-color: white
 }
-.contact .info-box:hover {
-  border-radius: 8px;
-  border-color: #ff2727;
-}
 
 @media only screen and (max-width:600px) {
   .contact .info-box {
@@ -527,7 +472,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #3f3b3b;
   font-weight: 700;
   margin: 10px 0
 }
@@ -593,7 +538,7 @@ section {
   font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Satisfy", serif;
+  font-family: "Manrope", serif;
   padding: 0;
   margin: 0 0 25px 0
 }
@@ -609,9 +554,4 @@ footer {
   font-size: 19px;
 }
 
-#of img {
-  margin-left:5px ;
-  width: 49px;
-  height: 49px;
-  vertical-align: middle; /* Aligns the image vertically in the middle of the line */
-}
+
