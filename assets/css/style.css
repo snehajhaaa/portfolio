@@ -436,7 +436,7 @@ section {
   text-align: center;
   padding: 70px 0;
   position: relative;
-  margin: 0
+  margin: 14
 }
 #footer::before {
   content: "";
